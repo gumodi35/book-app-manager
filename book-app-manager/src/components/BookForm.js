@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
 
 const BookForm = (props) => {
+    {/* define state using hook useState */} 
     const [book, setBook] = useState({
         bookname: props.book ? props.book.bookname : '',
         author: props.book ? props.book.author : '',
