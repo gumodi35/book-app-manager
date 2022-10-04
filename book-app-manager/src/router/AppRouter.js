@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import AddBook from '../components/AddBook';
-import BooksList from '../components/BookList';
+import BooksList from '../components/BooksList';
 
 const AppRouter = () => {
   return (
