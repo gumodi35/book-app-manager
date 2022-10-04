@@ -14,7 +14,12 @@ const AppRouter = () => {
         <Header />
         <div className="main-content">
           <Switch>
-            <Route component={BooksList} path="/" exact={true} />
+            <Route render = {(props) => (
+                <BooksList {...props} books={books} setBooks={setBooks} />
+            )} 
+             path ="/"
+             exact={true}
+            />
             <Route
               render={(props) => (
                 <AddBook {...props} books={books} setBooks={setBooks} />
