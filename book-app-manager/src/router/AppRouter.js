@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter , Switch, Route } from 'react-router-dom';
+import { BrowserRouter , Link, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import AddBook from '../components/AddBook';
 import BookList from '../components/BookList';
@@ -10,10 +10,10 @@ const AppRouter = () => {
          <div>
           <Header />
           <div className="main-content">
-           <Switch>
+           <Link>
             <Route component={BookList} path="/" exact={true} />
             <Route component={AddBook} path="/add" />
-           </Switch>
+           </Link>
         </div>
        </div>
      </BrowserRouter>

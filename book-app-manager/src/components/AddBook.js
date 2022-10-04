@@ -13,4 +13,4 @@ const AddBook = () => {
     );
 };
 
-export dafault AddBook;
+export default AddBook;

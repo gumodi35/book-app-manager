@@ -18,4 +18,4 @@ const Header = () => {
     )
 }
 
-export deaful Header;
+export default Header;

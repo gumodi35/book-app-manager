@@ -6,4 +6,4 @@ import './styles.scss';
 
 ReactDOM.render(
  <AppRouter />, 
-document.getElementById('root');)
+document.getElementById('root'));

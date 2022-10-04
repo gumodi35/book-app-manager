@@ -3,7 +3,6 @@ import { Form, Button } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
 
 const BookForm = (props) => {
-    {/* define state using hook useState */} 
     const [book, setBook] = useState({
         bookname: props.book ? props.book.bookname : '',
         author: props.book ? props.book.author : '',
@@ -21,7 +20,7 @@ const BookForm = (props) => {
         let errorMsg = '';
 
         const allFieldsFilled = values.every((field) => {
-            const value = `${field}`.trim():
+            const value = `${field}`.trim();
             return value !== '' && value !== '0';
         });
 
@@ -45,7 +44,7 @@ const BookForm = (props) => {
         const { name, value } = event.target;
         switch (name) {
             case 'quantity':
-                if(value == '' || parseInt(value) === +value) {
+                if(value === '' || parseInt(value) === +value) {
                     setBook((prevState) => ({
                         ...prevState,
                         [name]: value
