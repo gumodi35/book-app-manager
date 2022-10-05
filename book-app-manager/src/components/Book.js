@@ -14,7 +14,7 @@ const Book = ({
   const history = useHistory();
 
   return (
-    <Card style={{ width: '18rem' }} className="book">
+    <Card style={{ width: '18rem'  }} className="book">
       <Card.Body>
         <Card.Title className="book-title">{bookname}</Card.Title>
         <div className="book-details">
